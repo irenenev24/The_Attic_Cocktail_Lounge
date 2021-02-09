@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;;
+    color: #777777;
+}
+
+/*!-----------------------------------------Nav Bar------------------------------*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a, .phone {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #ffaac3;
+  color: black;
+  text-decoration: none;
+}
+
+.logo {
+    color: #ffaac3;
+    font-family: 'Courgette', cursive;
+    letter-spacing: 3px;
+    font-size: 16px;
+}
+
+.phone{
+    float: right;
+}
+
+.phone:hover {
+  background-color: #ffaac3;
+  color: black;
+  text-decoration: none;
+}
+
+/*----------------------------------------------------Hero Image-----------------------------------------------*/
+
+
+
+#hero-image-home {
+    background: url('../images/bar-counter.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+#hero-image-menu {
+    background: url('../images/food-hero-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+#hero-image-staff {
+    background: url('../images/staff.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+#cover-text, #cover-text h2 {
+    color: #b063c5;
+    font-size: 80px;
+} 
+
+#cover-text, #cover-text h3 {
+    color: white;
+    font-size: 40px;
+    } 
+
+#cover-text {
+    text-align: center;
+    font-size: 90%;
+    font-family: 'Courgette', cursive;
+    letter-spacing: 3px;
+    width: 80px;
+    height: 40px;
+    background-color: rgba(46, 49, 49, .2);
+    margin-left: 40%;
+}

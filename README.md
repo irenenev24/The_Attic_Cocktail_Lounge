@@ -1,45 +1,128 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **The Attic, cocktail lounge and restaurant.**
 
-Welcome USER_NAME,
+This is a website to promote a new cocktail bar and restaurant located in Manchester, England.
+I want to use this website to build brand awareness and increase social media presence and reviews.
+Provide a good user experience for new and returning users with an easy to navigate site and clear, easy to use booking/contact forms.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
 
-## Gitpod Reminders
+## UX
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Who is this website for?
 
-`python3 -m http.server`
+* This webiste if for people looking to book a venue for private events.
+* This website is for people based in England, preferably close to Manchester.
+* It is aimed at people aged 18+ with disposable income.
 
-A blue button should appear to click: *Make Public*,
+### What do visitors want?
 
-Another blue button should appear to click: *Open Browser*.
+* Clear information on how to book the venue for events.
+* Information on opening hours, location, menus and pricing.
+* Easy to find booking/contact form.
+* A trustworthy, easy to navigate site that gives clear information about the  
+  bar.
+* Multiple ways to contact the bar including links to social media pages.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: *Make Public*,
+### Business Goals:
 
-Another blue button should appear to click: *Open Browser*.
+1. Build brand awareness.
+1. Showcase menu items and function room.
+1. Provide potential clients with information about the bar, restaurant and        function room.
+1. Promote social media pages.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Customer Goals:
 
-## Updates Since The Instructional Video
+#### First time customer
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+1. Is this site trusthworthy and easy to navigate?
+1. Is the purpose of this site clear?
+1. Do I understand the information provided about the business?
+1. Are there any reviews about this business?
+1. How can I contact them to make a booking or ask for more information?
+1. Can I view an online menu or download a menu?
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+#### Repeat customers
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+1. Can I easily make a booking?
+1. Can I leave an online review?
+1. Can I view an online menu or download a menu?
+1. Can I follow this business on social media?
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Strategy
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* An easy to navigate website to promote the business and its social media        accounts.
+* Build brand awareness and repeat clientele.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Scope
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* How to contact the bar for further information.
+* How to book the bar for functions.
+* What the bar offers eg: Cocktail menu, Restaurant menu.
+* A gallery to show pictures of the items on offer here.
+* A review section.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Structure
 
---------
+* A minimalist site with clear sections or pages for menus, reviews, pictures     and social links.
+* Good flow across pages so user knows what to expect and how to find             information.
+* An easy to find and use contact form.
 
-Happy coding!
+### Skeleton
+
+* Sticky nav across all pages (home, menu, gallery, function and contact us).
+* Hero image with company logo on home page, and company logo and further page    info on other pages. E.g: Menus or contact page.
+* Menus that can be downloaded.
+* Gallery slideshow.
+* Review section.
+* Contact page with email address, address, phone number.
+* Section with address, opening hours, e-mail and telephone number with icons.
+* Footer with social media links.
+
+### Surface
+
+* Color scheme https://colorhunt.co/palette/212573
+
+## Features 
+
+### Home
+* A home page with a hero image and company logo in the nav bar.
+* About us section with details of opening hours, address, e-mail address,        phone number and icons.
+* A review section featuring customers reviews and images.
+* Images -  mix of venue, food and drink images on the home page.
+
+### Menu page
+* Menus 
+  - one cocktail menu.
+  - one restaurant menu.
+* Images - mix of food and drink images on the menu page.
+
+### Contact page
+* Contact page with an easy to fill out from requiring full name, email address   and an input bow with a placeholder of 'If you wish to make a booking, please   state number of people and the date you wish to book for.'
+* Images - mix of venue images on the contact page.
+
+### Gallery
+* Mix of images.
+* Cocktail tutorial videos.
+
+  
+ ## Features left to implement
+
+In the future I would like to build on to this site by adding:
+  - An online booking system.
+  - An upcoming events page.
+  - A shop page to sell pre-made cocktails online.
+
+
+## Technologies used:
+* HTML5
+* CSS3 
+* Bootstrap
+
+## Testing
+
+## Deployment 
+
+## Credits
+### Content
+### Media
+### Acknowledgements

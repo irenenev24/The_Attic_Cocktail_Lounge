@@ -51,15 +51,25 @@ body{
 
 /*----------------------------------------------------Hero Image-----------------------------------------------*/
 
-
-
-.hero-image-home {
+.home {
     background: url('../images/bar-counter.png');
+}
+.menu {
+    background: url('../images/food-hero-image.png');
+}
+.contact {
+    background: url('../images/daytime-bar-shot.png');
+}
+.functions {
+    background: url('../images/staff.png');
+}
+
+#hero-image{
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    height: 500px;
-    width: 2000px;
+    height: 900px;
     position: relative;
     opacity: 0.8;
     transition: all .5s ease-in-out;
@@ -76,62 +86,44 @@ body{
     z-index: 2;
 }
 
-.hero-text-home {
+.hero-text-h1 {
   font-size: 80px;
   font-family: 'Courgette', cursive;
   color: Blue;
 }
-.hero-paragraph-home {
+.hero-text-p {
   font-size: 40px;
   font-family: 'Roboto', sans-serif;
   color: white;
 }
 
-/*#hero-image-menu {
-    background: url('../images/food-hero-image.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-}
 
-#hero-image-staff {
-    background: url('../images/staff.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-}
 
-hero-text h1 {
-    color: #b063c5;
-    font-size: 80px;
-    text-align: center;
-    padding: 26px;
-} 
+/*------------------------------------------------------------------About Us---------------------------------------*/
 
- hero-text h2 {
-    color: white;
-    font-size: 40px;
-    padding:16px;
-} 
-*/
+
+
+
+
+/*--------------------------------------------------------------------Review---------------------------------------*/
+
+
+
 
 /*--------------------------------------------------------------------Footer---------------------------------------*/
 footer {
     background-color: black;
     color: #007bff;
+    padding: 30px 10px;
 }
 
 .social-links {
     font-size: 40px;
     margin: 2px;
     padding: 2px 1px;
+    color: #ffaac3;
+}
+
+.footer-pink {
     color: #ffaac3;
 }

@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>  
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css">
@@ -11,138 +15,80 @@
     <title>The Attic | Cocktail Lounge and Restaurant</title>
 </head>
 <body>
-      <!-------------------------------------------Nav Items---------------------------------------------->
+     <!-----------------------------------------------------------Nav Items------------------------------------------------------------->
     <header>
-        <nav class="navbar navbar-expand-sm justify-content-center fixed-top">
-            <a class="navbar-brand" href="index.html"><i class="fa fa-fw fa-home"></i>The Attic</a>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="menu.html">Menus</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="active nav-link" href="gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="functions.html">Functions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                    <li class="nav-link">
-                    <i class="fa fa-fw fa-phone"></i> +44 273 7897652
-                    </li>
-                </ul>
-        </nav>
-    <!--------------------------------------------End Nav Items-------------------------------------------->
+           <nav class="navbar navbar-expand-md navbar-dark">
+  <a class="navbar-brand" href="index.html">The Attic</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link"  href="menu.html">Menus</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="functions.html">Functions</a>
+      </li>    
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact Us</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
         </header>
-
-        <section>
-            <div class="gallery">
-                    <img src="assets/images/cocktail-one.png" alt="cocktail" width="300" height="300">
-                    <img src="assets/images/food-one.png" alt="salmon" width="300" height="300">
-                    <img src="assets/images/cocktail-two.png" alt="pornstar-martini-cocktail" width="300" height="300">
+     <!--------------------------------------------------------------End Nav Items------------------------------------------------------>
+   
+      <section>
+            <div class="img-container item">
+                    <img src="assets/images/cocktail-one.png" alt="cocktail" width="450" height="450">
+                    <img src="assets/images/food-one.png" alt="salmon" width="450" height="450">
+                    <img src="assets/images/cocktail-two.png" alt="pornstar-martini-cocktail" width="450" height="450">
+                    <img src="assets/images/food-two.png" alt="the-attic-burger" width="450" height="450">
+                    <img src="assets/images/cocktail-three.png" alt="pineapple-tiki-cocktail" width="450" height="450">
+                    <img src="assets/images/food-three.png" alt="steak" width="450" height="450">
+                    <img src="assets/images/cocktail-four.png" alt="mojito and strawberry mojito" width="450" height="450">
+                    <img src="assets/images/food-four.png" alt="veg-stir-fry" width="450" height="450">
+                    <img src="assets/images/cocktail-five.png" alt="old-fashioned" width="450" height="450">
+                    <img src="assets/images/food-five.png" alt="prawn-curry" width="450" height="450">
+                    <img src="assets/images/old-fashioned.png" alt="old-fashioned" width="450" height="450">
+                    <img src="assets/images/food-six.png" alt="choc-cake" width="450" height="450">
             </div>
-             <div class="gallery">
-                <a href="food-two.png">
-                    <img src="assets/images/food-two.png" alt="the-attic-burger" width="300" height="300">
-                </a>
-                <div class="gallery-images">'The Attic' Burger
-                </div>
-            </div>
-             <div class="gallery">
-                <a href="cocktail-three.png" target="_blank">
-                    <img src="assets/images/cocktail-three.png" alt="pineapple-tiki-cocktail" width="300" height="300">
-                </a>
-                <div class="gallery-images">Pineapple Tiki Martini
-                </div>
-            </div>
-                 <div class="gallery">
-                <a href="food-three.png" target="_blank">
-                    <img src="assets/images/food-three.png" alt="steak" width="300" height="300">
-                </a>
-                <div class="gallery-images">Steak
-                </div>
-            </div>
-                <div class="gallery">
-                <a href="cocktail-four.png"  target="_blank">
-                    <img src="assets/images/cocktail-four.png" alt="mojito and strawberry mojito" width="300" height="300">
-                </a>
-                <div class="gallery-images">Mojito and Strawberry Mojito
-                </div>
-            </div>
-            <div class="gallery">
-                <a href="food-four.png" target="_blank">
-                    <img src="assets/images/food-four.png" alt="veg-stir-fry" width="300" height="300">
-                </a>
-                <div class="gallery-images">Vegetable Stir Fry
-                </div>
-            </div>
-             <div class="gallery">
-                <a href="cocktail-five.png"  target="_blank">
-                    <img src="assets/images/cocktail-five.png" alt="old-fashioned" width="300" height="300">
-                </a>
-                <div class="gallery-images">Old Fashioned
-                </div>
-            </div>
-             <div class="gallery">
-                <a href="food-five.png"  target="_blank">
-                    <img src="assets/images/food-five.png" alt="prawn-curry" width="300" height="300">
-                </a>
-                <div class="gallery-images">Prawn Curry
-                </div>
-            </div>
-
-
-
-
-
-
-
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!--------------------------------------------Footer----------------------------------------------------->
+     <!---------------------------------------------------------------Eng Images------------------------------------------------------->
+     <!-----------------------------------------------------------------Footer--------------------------------------------------------->
         <footer class="container-fluid">
-            <div class="row">
-                <div class="col-md-4 text-center">
-                   <h5>Opening Hours</h5>
-                    <p>Mon - Thurs 10AM-11.30PM</p>
-                    <p>Fri - Sun 10AM -2AM</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <h5>Contact Us:</h5>
-                    <p>E-mail Us: theatticlounge@gmail.com</p>
-                    <p>Phone Us: +44 273 7897652</p>
-                    <p>Address: 234 Loxley Lane, Manchester. BD65GSF</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="social-links">
-                    <h5>Social Links</h5>
-                      <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class=" fa fa-facebook"></i></a>
-                      <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
-                      <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter"><i class="fa fa-twitter-square"></i></a>
-                      <a href="https://www.youtube.com/" target="_blank" aria-label="Youtube"><i class="fa fa-youtube-square"></i></a>
-                      <a href="https://www.snapchat.com/" target="_blank" aria-label="Snapchat"><i class="fa fa-snapchat-ghost"></i></a>
-                    </div>
-                </div>
-            </div>    
-            <hr>
-            <div class="footer-copyright text-center">
-                <p>Copyright The Attic Lounge and Restaurant 2021 | All Rights Reserved</p>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <h5 class="footer-heading">Opening Hours:</h5>
+                <p>Mon - Thurs 10AM-11.30PM</p>
+                <p>Fri - Sun 10AM -2AM</p>
             </div>
-        </footer> 
-    <!--------------------------------------------End Footer--------------------------------------------------->
+            <div class="col-md-4 text-center">
+                <h4 class="footer-heading">Contact Us:</h4>
+                <p>E-mail Us: theatticlounge@gmail.com</p>
+                <p>Phone Us: +44 273 7897652</p>
+                <p>Address: 234 Loxley Lane, Manchester. BD65GSF</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="social-links">
+                    <h4 class="footer-heading">Social Links:</h4>
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" rel="noopener"><i class=" fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter"><i class="fa fa-twitter-square"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" aria-label="Youtube"><i class="fa fa-youtube-square"></i></a>
+                    <a href="https://www.snapchat.com/" target="_blank" aria-label="Snapchat"><i class="fa fa-snapchat-ghost"></i></a>
+                </div>
+            </div>
+        </div>    
+            <br>
+            <div class="footer-copyright text-center">
+                <h5><p class="footer-pink">Copyright © The Attic Lounge and Restaurant 2021 | All Rights Reserved</p></h5>
+            </div>
+    </footer> 
+    <!---------------------------------------------------------------End Footer Section------------------------------------------------->
 </body>
 </html>

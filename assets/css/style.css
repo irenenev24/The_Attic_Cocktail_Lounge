@@ -1,55 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans&family=Roboto&display=swap');
 
 *{
-    margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 body{
-    font-family: 'Roboto', sans-serif;;
-    color: #777777;
+    font-family: 'Roboto', sans-serif;
+    color: black;
     background-color: #f7f7f7;
     height: 100%;
-    width: 100%;
+    max-width: 2000px
 }
 
-/*!-----------------------------------------Nav Bar------------------------------*/
+/*!-------------------------------------------------Nav Bar---------------------------------------------------*/
 
 .navbar {
   list-style-type: none;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
   background-color: black;
+}
+.navbar-brand {
+    font-family: 'Courgette', cursive;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+}
+.navbar-dark .navbar-brand {
+    color:  rgb(238, 83, 83) !important;
 }
 
 .nav-item {
-  float: left;
-}
-
-.nav-link {
   display: block;
   color: white;
   text-align: center;
-  padding: 24px 28px;
   text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+  padding: 12px 20px;
 }
 
 .nav-link:hover {
-  background-color: #ffaac3;
-  color: black;
+  background-color: rgb(238, 83, 83);
+  color: white;
   text-decoration: none;
 }
 
-.navbar-brand {
-    color: #ffaac3;
-    font-family: 'Courgette', cursive;
-    letter-spacing: 3px;
-    font-size: 20px;
+.navbar-brand:hover {
+    background-color: rgb(238, 83, 83);
 }
 
-/*----------------------------------------------------Hero Image-----------------------------------------------*/
+/*----------------------------------------------------End Nav Bar------------------------------------------------*/
+
+/*----------------------------------------------------Hero Image-------------------------------------------------*/
 
 .home {
     background: url('../images/bar-counter.png');
@@ -69,61 +75,209 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 900px;
+    height: 50vh;
     position: relative;
-    opacity: 0.8;
+    margin: 0;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
 }
-
-.hero-text{
+/*-----------------------------------------------.hero-text{} Taken from w3schools and amended-----------------------------*/
+.hero-text {
     text-align: center;
     position: absolute;
+    display: block;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    background-color: rgb(238, 83, 83);
+    padding: 30px;
+    height: 15vh;
+    border-radius: 50%;
 }
 
 .hero-text-h1 {
-  font-size: 80px;
+  font-size: 2.8rem;
   font-family: 'Courgette', cursive;
-  color: Blue;
+  color: Beige;
+  position: relative;
+  
 }
+
 .hero-text-p {
-  font-size: 40px;
+  font-size: 2rem;
   font-family: 'Roboto', sans-serif;
-  color: white;
+  color: black;
+  position: relative;
+}
+/*---------------------------------------------------------End Hero Image------------------------------------------*/
+
+/*------------------------------------------------------------About Us---------------------------------------------*/
+.about {
+    color: black;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    background-color: #fafafa;
+    text-align: center;
 }
 
+.about-review-heading {
+    color: Black;
+    font-family: 'Courgette', cursive;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
 
+.jumbotron {
+    margin: 0;
+  
+}
 
-/*------------------------------------------------------------------About Us---------------------------------------*/
+/*----------------------------------------------End of About Us Section--------------------------------------------*/
 
+/*---------------------------------------------------Review Section------------------------------------------------*/
 
+.reviewer-details {
+    font-family: 'Courgette', cursive;
+}
 
+.reviews {
+    color: black;
+    font-size: 1.2rem;
+    background-color: lightGray;
+}
 
+/*---------------------------------------------------End Review Section--------------------------------------------*/
 
-/*--------------------------------------------------------------------Review---------------------------------------*/
-
-
-
-
-/*--------------------------------------------------------------------Footer---------------------------------------*/
+/*--------------------------------------------------------Footer---------------------------------------------------*/
 footer {
+    clear: both;
     background-color: black;
-    color: #007bff;
+    color: #fafafa;
     padding: 30px 10px;
+}
+.footer-heading {
+    font-family: 'Courgette', cursive;
+    font-size: 1.8rem;
+    padding-bottom: 10px;
 }
 
 .social-links {
-    font-size: 40px;
+    font-size: 60px;
     margin: 2px;
     padding: 2px 1px;
-    color: #ffaac3;
 }
 
-.footer-pink {
-    color: #ffaac3;
+.footer-red {
+    color: rgb(238, 83, 83);
+}
+
+footer span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/*-------------------------------------------------------End Footer----------------------------------------------*/
+
+/*-------------------------------------------------------Gallery---------------------------------------------------*/
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+.item {
+    margin: 0;
+}
+/*------------------------------------------------------End Gallery------------------------------------------------*/
+
+/*--------------------------------------------------------Functions------------------------------------------------*/
+.function-header-details {
+    color: rgb(238, 83, 83);
+    font-family: 'Courgette', cursive;
+    padding-bottom: 10px;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    background-color: #fafafa;
+}
+
+.function-details {
+    color: black;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    background-color: #fafafa;
+}
+
+
+/*------------------------------------------------------End Functions----------------------------------------------*/
+
+
+/*-------------------------------------------------------Contact page----------------------------------------------*/
+             /*---------------------------------------------Form------------------------------------------*/
+.container-one{
+    background-color: #fafafa;
+    padding: 30px;
+} 
+
+input[type=text], input[type="email"], select, textarea{
+  width: 40vw;
+  padding: 7px;
+  border: 7px;
+  border-radius: 7px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+legend {
+    font-size: 2.4rem;
+    font-family: 'Courgette', cursive;
+    color: black;
+    padding: 4px;
+}
+label {
+    font-size: 1.4rem;
+    color: black;
+    padding: 2px 1px 0px 0px;
+}
+
+@media screen and (max-width: 800px) {
+    input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    margin-top: 0;
+  }
+  legend {
+      font-size: 1.6rem;
+  }
+}
+/*-------------------------------------------------------End Form--------------------------------------------------*/
+/*-------------------------------------------------------Menu Page-------------------------------------------------*/
+        /*-----------------------------------Taken from w3schools and amended-----------------------------*/
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 1200px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*-----------------------------------------------------End Menu Page------------------------------------------------*/
+
+/*-------------------------------------------------------Menu Page-------------------------------------------------*/
+/*@media screen and (max-width: 760px) {
+  #hero-image {
+    width: 100vw;
+  }
+  .hero-text, .hero text p, .hero-text h1{
+    position: absolute;
+  }
 }

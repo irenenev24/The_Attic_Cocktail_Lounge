@@ -8,10 +8,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>  
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css">-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css">
- 
     <link rel="stylesheet" href="assets/css/style.css">
     <title>The Attic | Cocktail Lounge and Restaurant</title>
 </head>
@@ -19,9 +18,10 @@
       <!-------------------------------------------Nav Items---------------------------------------------->
       <!--------Nav Bar copied and amended as necessary from w3schools-bootstrap4------------------------->
     <header>
-           <nav class="navbar navbar-expand-md navbar-dark">
+       
+           <nav class="navbar navbar-expand-md navbar-light">
   <a class="navbar-brand" href="index.html">The Attic</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-label="navbar-toggler">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -30,11 +30,11 @@
         <a class="nav-link"  href="menu.html">Menus</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="gallery.html">Gallery</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="functions.html">Functions</a>
-      </li>    
+      </li>  
+      <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Gallery</a>
+      </li>  
       <li class="nav-item">
         <a class="nav-link" href="contact.html">Contact Us</a>
       </li>    
@@ -46,10 +46,11 @@
 
     <main>
     <!----------------------------------------------Hero Image--------------------------------------------->
-        <section class="home" id="hero-image">
-            <div class="hero-text">
-                <h1 class="hero-text-h1">The Attic</h1>
-                <p class="hero-text-p">Cocktail Lounge <br>Restaurant</p>
+        <section>
+            <div class="home" id="hero-image">
+                <div class="hero-text">
+                    <h1 class="hero-text-h1">The Attic</h1>
+                </div>
             </div>
         </section>
     <!----------------------------------------------End Hero Image----------------------------------------->
@@ -57,11 +58,11 @@
     <!-----------------------------------------------Main Section------------------------------------------>
         <section class="about jumbotron text-center container-fluid">            
 
-            <h2 class="text-uppercase about-review-heading">About Us:</h2>
+            <h3 class="text-uppercase about-review-heading">About Us:</h3>
             <hr>
                 <p>First established in 1948, The Attic began its life as a small bar above a greengrocers in Manchester, England.<br>
-                    Hidden down a side street in the city center, The Attic was frequented by local tradesmen and politicians alike.<br>
-                    Prefered by many for its moody interior and intimate corners, it was a place to get business done, make new <br>acquiantances
+                    Hidden down a side street in the city centre, The Attic was frequented by local tradesmen and politicians alike.<br>
+                    Preferred by many for its moody interior and intimate corners, it was a place to get business done, make new <br>acquaintances
                     and socialise in private.<br><br>
                     From its once humble beginnings, The Attic has been renovated into a much larger location.
                     Now the number<br>
@@ -75,7 +76,7 @@
         <section class="jumbotron text-center reviews container-fluid">
             <div class="row">
                 <div class="col-12">
-                <h3 class="text-uppercase about-review-heading">Reviews:</h3>
+                <h4 class="text-uppercase about-review-heading">Reviews:</h4>
                 </div>
         </div>
          <hr>
@@ -83,7 +84,7 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="media">
                     <div class="d-none d-sm-block">
-                        <img src="assets/images/reviewer1.png" alt="girl" class="rounded-circle mr3" height="100" width="100">
+                        <img src="assets/images/reviewer1.png" alt="girl" class="reviewer-image rounded-circle mr3">
                     </div>
                     <div class="media-body">
                         <blockquote>
@@ -96,7 +97,7 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="media">
                     <div class="d-none d-sm-block">
-                        <img src="assets/images/reviewer2.png" alt="girl-with-dog" class="rounded-circle mr3" height="100" width="100">
+                        <img src="assets/images/reviewer2.png" alt="girl-with-dog" class="reviewer-image rounded-circle mr3">
                     </div>
                         <div class="media-body">
                             <blockquote>
@@ -109,7 +110,7 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="media">
                     <div class="d-none d-sm-block">
-                        <img src="assets/images/reviewer3.png" alt="man" class="rounded-circle mr3" height="100" width="100">
+                        <img src="assets/images/reviewer3.png" alt="man" class="reviewer-image rounded-circle mr3">
                     </div>
                         <div class="media-body">
                             <blockquote>
@@ -122,7 +123,7 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="media">
                     <div class="d-none d-sm-block">
-                        <img src="assets/images/reviewer4.png" alt="guy-with-camera" class="rounded-circle mr3" height="100" width="100">
+                        <img src="assets/images/reviewer4.png" alt="guy-with-camera" class="reviewer-image rounded-circle mr3">
                     </div>
                     <div class="media-body">
                         <blockquote>
@@ -146,25 +147,27 @@
                 <p><span>Fri - Sun :</span>  10AM - 2AM</p>
             </div>
             <div class="col-md-4 text-center">
-                <h4 class="footer-heading">Contact Us:</h4>
+                <h5 class="footer-heading">Contact Us:</h5>
                 <p><span>E-mail Us :</span>  theatticlounge@gmail.com</p>
                 <p><span>Phone Us :</span>  +44 273 7897652</p>
                 <p><span>Address :</span>  234 Loxley Lane, Manchester. BD65GSF</p>
             </div>
             <div class="col-md-4 text-center">
                 <div class="social-links">
-                    <h4 class="footer-heading">Social Links:</h4>
+                    <div class="footer-heading">
+                        <h5>Social Links:</h5>
                     <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" rel="noopener"><i class=" fa fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
-                    <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter"><i class="fa fa-twitter-square"></i></a>
-                    <a href="https://www.youtube.com/" target="_blank" aria-label="Youtube"><i class="fa fa-youtube-square"></i></a>
-                    <a href="https://www.snapchat.com/" target="_blank" aria-label="Snapchat"><i class="fa fa-snapchat-ghost"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" rel="noopener"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter" rel="noopener"><i class="fa fa-twitter-square"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" aria-label="Youtube" rel="noopener"><i class="fa fa-youtube-square"></i></a>
+                    <a href="https://www.snapchat.com/" target="_blank" aria-label="Snapchat" rel="noopener"><i class="fa fa-snapchat-ghost"></i></a>
+                    </div>
                 </div>
             </div>
         </div>    
             <br>
             <div class="footer-copyright text-center">
-                <h5><p class="footer-red">Copyright © The Attic Lounge and Restaurant 2021 | All Rights Reserved</p></h5>
+                <h6><p class="footer-red">Copyright © The Attic Lounge and Restaurant 2021 | All Rights Reserved</p></h6>
             </div>
     </footer> 
     <!--------------------------------------------End Footer Section------------------------------------------------->

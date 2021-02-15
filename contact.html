@@ -15,11 +15,11 @@
     <title>The Attic | Cocktail Lounge and Restaurant</title>
 </head>
 <body>
-      <!-------------------------------------------Nav Items---------------------------------------------->
+    <!--------Nav Bar copied and amended as necessary from w3schools-bootstrap4------------------------->
     <header>
-           <nav class="navbar navbar-expand-md navbar-dark">
+           <nav class="navbar navbar-expand-md navbar-light">
   <a class="navbar-brand" href="index.html">The Attic</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-label="navbar-toggler">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -28,11 +28,11 @@
         <a class="nav-link"  href="menu.html">Menus</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="gallery.html">Gallery</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="functions.html">Functions</a>
-      </li>    
+      </li>  
+      <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Gallery</a>
+      </li>  
       <li class="nav-item">
         <a class="nav-link" href="contact.html">Contact Us</a>
       </li>    
@@ -44,7 +44,7 @@
        
     <!-----------------------------------------------Hero Image-------------------------------------------->
 <main>
-     <section class="contact container-fluid" id="hero-image">
+     <section class="contact" id="hero-image">
             <div class="hero-text">
                 <h1 class="hero-text-h1">Contact Us:</h1>
             </div>
@@ -58,19 +58,18 @@
                 <form>
                     <legend>Customer Details:</legend>
                             <label for="name">Name:</label><br>
-                                <input type="text" name="name" id="name">
+                                <input type="text" required name="name" id="name">
                                 <br>
                             <label for="email">Email:</label><br>
                                 <input type="email" required name="email" id="email"><br>
                     <legend>How can we help?</legend>
-                        <select id="enquiry-list">
+                        <select class="enquires">
                             <option value="Table">Book a table</option>
                             <option value="Function">Book a private function</option>
                             <option value="Party">Book a large party</option>
                         </select><br><br>
-                            <textarea id="enquires" rows="10" cols="50">
-                            </textarea><br>
-                            <button class="btn danger">Danger</button>
+                            <textarea id="enquires" rows="10" cols="50" required placeholder="Please provide booking details"></textarea><br>
+                            <button class="btn">Submit</button>
 
                 </form>
             </div>
@@ -80,35 +79,35 @@
     <!--------------------------------------------End Contact Form----------------------------------------->
     
     <!-----------------------------------------------Footer------------------------------------------------>
-    <footer class="container-fluid">
+<footer class="container-fluid">
         <div class="row">
             <div class="col-md-4 text-center">
                 <h5 class="footer-heading">Opening Hours:</h5>
-                <p>Mon - Thurs 10AM-11.30PM</p>
-                <p>Fri - Sun 10AM -2AM</p>
+                <p><span>Mon - Thurs :</span>  10AM - 11.30PM</p>
+                <p><span>Fri - Sun :</span>  10AM - 2AM</p>
             </div>
             <div class="col-md-4 text-center">
-                <h4 class="footer-heading">Contact Us:</h4>
-                <p>E-mail Us: theatticlounge@gmail.com</p>
-                <p>Phone Us: +44 273 7897652</p>
-                <p>Address: 234 Loxley Lane, Manchester. BD65GSF</p>
+                <h5 class="footer-heading">Contact Us:</h5>
+                <p><span>E-mail Us :</span>  theatticlounge@gmail.com</p>
+                <p><span>Phone Us :</span>  +44 273 7897652</p>
+                <p><span>Address :</span>  234 Loxley Lane, Manchester. BD65GSF</p>
             </div>
             <div class="col-md-4 text-center">
                 <div class="social-links">
-                    <h4 class="footer-heading">Social Links:</h4>
+                    <h5 class="footer-heading">Social Links:</h5>
                     <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" rel="noopener"><i class=" fa fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
-                    <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter"><i class="fa fa-twitter-square"></i></a>
-                    <a href="https://www.youtube.com/" target="_blank" aria-label="Youtube"><i class="fa fa-youtube-square"></i></a>
-                    <a href="https://www.snapchat.com/" target="_blank" aria-label="Snapchat"><i class="fa fa-snapchat-ghost"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" rel="noopener"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter" rel="noopener"><i class="fa fa-twitter-square"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" aria-label="Youtube" rel="noopener"><i class="fa fa-youtube-square"></i></a>
+                    <a href="https://www.snapchat.com/" target="_blank" aria-label="Snapchat" rel="noopener"><i class="fa fa-snapchat-ghost"></i></a>
                 </div>
             </div>
         </div>    
             <br>
             <div class="footer-copyright text-center">
-                <h5><p class="footer-pink">Copyright © The Attic Lounge and Restaurant 2021 | All Rights Reserved</p></h5>
+                <h6><p class="footer-red">Copyright © The Attic Lounge and Restaurant 2021 | All Rights Reserved</p></h6>
             </div>
-    </footer> 
+    </footer>
     <!--------------------------------------------End Footer Section------------------------------------------------->
 
   

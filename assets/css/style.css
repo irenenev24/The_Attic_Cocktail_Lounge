@@ -6,69 +6,34 @@ body{
     background-color: #f7f7f7;
     height: 100%;
 }
-/*!-------------------------------------------------Nav Bar---------------------------------------------------*/
+/*-------------------------------------------------Nav Bar---------------------------------------------------*/
 .navbar-custom {
     background-color: rgb(193, 238, 253);
     font-size: 1.7rem;
-    /*display: block;*/
-    text-align: center;
-    /*padding: 4px 15px;*/
-    list-style: none;
-    margin: 0;
-}
-.custom-toggler .navbar-toggler-icon {
-  background-image: url(“data:image/svg+xml;charset=utf8,%3Csvg viewBox=’0 0 32 32' xmlns=’http://www.w3.org/2000/svg'%3E%3Cpath stroke=’rgba(255,102,203, 0.5)’ stroke-width=’2' stroke-linecap=’round’ stroke-miterlimit=’10' d=’M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E”);
 }
 .navbar-custom .navbar-brand {
-    background-color:#ffffec;
     color: #36454f;
-    text-shadow: 3px 3px 5px rgb(193, 238, 253);
-    padding: 4px 10px;
+    text-shadow: 3px 3px 6px rgb(193, 238, 253);
+    padding: 4px 7px;
     font-family: "Courgette", cursive;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     letter-spacing: .1rem;
     display: block;
     border-radius: 1.5rem;
     list-style: none;
     margin: 0;
-   
 }
-.navbar-nav .navbar-custom .navbar-item .navbar-link {
-  display: block;
-  color: #36454f;
-  text-decoration: none;
+.navbar-custom a:hover {
+    background-color: #ffffec;
 }
-
-navbar {
-  background-color: rgb(193, 238, 253);
-  list-style-type: none;
-  margin: 0;
-}
-
-nav-item {
-  display: block;
-  color: #ffffec;
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: 2px;
-  font-size: 1.4rem;
-  padding: 12px 20px;
-}
-
-nav-link:hover {
-  color: ;
-  text-decoration: none;
-}
-
 /*----------------------------------------------------End Nav Bar------------------------------------------------*/
 
 /*----------------------------------------------------Hero Image-------------------------------------------------*/
-
 .home {
-    background: url('../images/bar-640.png');
+    background: url('../images/daytime-bar-shot.png');
 }
 .menu {
-    background: url('../images/hero-food-image.png');
+    background: url('../images/food-hero-image-640.png');
 }
 .contact {
     background: url('../images/bar-at-night-640.png');
@@ -94,7 +59,7 @@ nav-link:hover {
     -webkit-transition: all .5s ease-in-out;
 }
                 /*----.hero-text{} Taken from w3schools and amended-------*/
-#hero-text, .hero-text-h1 {
+.hero-text-h1 {
     text-align: center;
     position: absolute;
     display: block;
@@ -105,12 +70,31 @@ nav-link:hover {
     background-color: rgb(193, 238, 253);
     border-radius: 1.5rem;
     font-size: 4.5rem;
-    padding: 15px 20px;
+    padding: 15px 4px;
     font-family: "Courgette", cursive;
     color: #ffffec;
-    text-shadow: 3px 3px 6px #36454f;
-  
-}
+    text-shadow: 3px 3px 5px #36454f;
+  }
+  @media screen and (max-width: 400px) {
+      .hero-text-h1 {
+          font-size: 3.4rem;
+          margin: 0;
+      }
+      .navbar-custom .navbar-brand {
+          font-size: 1.8rem;
+          padding: 2px 4px;
+      }
+  }
+  @media screen and (max-width: 300px) {
+    .hero-text-h1{
+          font-size: 3rem;
+          margin: 0;
+      }
+        .navbar-custom .navbar-brand {
+          font-size: 1.8rem;
+          padding: 2px 4px;
+      }
+  }
 /*---------------------------------------------------------End Hero Image------------------------------------------*/
 
 /*------------------------------------------------------------About Us---------------------------------------------*/
@@ -120,6 +104,7 @@ nav-link:hover {
     letter-spacing: .1rem;
     background-color: #ffffec;
     text-align: center;
+    padding: 25px;
 }
 .about-review-heading {
     color: #36454f;
@@ -139,9 +124,9 @@ nav-link:hover {
     font-family: "Courgette", cursive;
 }
 .reviews {
-    color: #060930;
+    color: #36454f;
     font-size: 1.5rem;
-    background-color: rgb(193, 238, 253);
+    background-color:rgb(193, 238, 253);
 }
 .reviewer-image {
     height: 100px;
@@ -152,7 +137,7 @@ nav-link:hover {
 
 /*--------------------------------------------------------Footer---------------------------------------------------*/
 footer {
-    clear: both;
+    margin: 0;
     background-color: #36454f;
     color: #ffffec;
     padding: 30px 10px;
@@ -186,14 +171,34 @@ footer span {
 /*-------------------------------------------------------End Footer----------------------------------------------*/
 
 /*-------------------------------------------------------Gallery---------------------------------------------------*/
-.img-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    justify-content: space-evenly;
+.gallery {
+    background-color: #ffffec;
+}.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1rem;
 }
-.item {
-    margin: 0;
+.responsive-image {
+    max-width: 100%;
+}
+.cell-img {
+    display: block;
+}
+@media screen and (min-width: 600px) {
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .cell {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .cell {
+        width: 33%;
+        background-color: black;
+    }
 }
 /*------------------------------------------------------End Gallery------------------------------------------------*/
 
@@ -221,25 +226,33 @@ footer span {
     padding: 30px;
 } 
 input[type=text], input[type="email"], select, textarea{
-  width: 40vw;
-  padding: 7px;
-  border: 1.5px solid #36454f;
-  border-radius: 7px;
-  box-sizing: border-box;
-  resize: vertical;
+   width: 40vw;
+   padding: 7px;
+   border: 1.5px solid #36454f;
+   border-radius: 7px;
+   box-sizing: border-box;
+   resize: vertical;
 }
 legend {
-    font-size: 3rem;
     font-family: "Courgette", cursive;
     color:#36454f;
     text-shadow: 2px 2px 2px #fafafa;
+    font-weight: bold;
+}
+.customer-details {
+    font-size: 3.5rem;
+}
+.help-details {
+    font-size: 2.5rem;
+    padding: 10px;
 }
 label {
     margin-top: 20px;
     font-family: "Courgette", cursive;
     font-size: 1.5rem;
-    color: black;
+    color: #36454f;
     padding: 2px 1px 0px 0px;
+    text-shadow: 2px 2px 2px #fafafa;
 }
 .btn {
     background-color: red;
@@ -257,21 +270,21 @@ label {
     margin-top: 0;
   }
   legend {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 }
 /*-------------------------------------------------------End Form--------------------------------------------------*/
 /*-------------------------------------------------------Menu Page-------------------------------------------------*/
         /*-----------------------------------Taken from w3schools and amended-----------------------------*/
 .column {
-  float: left;
-  width: 50%;
-  padding: 5px;
+    float: left;
+    width: 50%;
+    padding: 5px;
 }
 .row::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
 .download {
     background-color: #ffffec;

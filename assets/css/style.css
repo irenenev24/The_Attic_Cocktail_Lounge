@@ -77,19 +77,11 @@ body{
           font-size: 3.4rem;
           margin: 0;
       }
-      .navbar-custom .navbar-brand {
-          font-size: 1.8rem;
-          padding: 2px 4px;
-      }
   }
   @media screen and (max-width: 300px) {
     .hero-text-h1{
           font-size: 3rem;
           margin: 0;
-      }
-        .navbar-custom .navbar-brand {
-          font-size: 1.8rem;
-          padding: 2px 4px;
       }
   }
 /*---------------------------------------------------------End-Hero-Image------------------------------------------*/
@@ -164,6 +156,13 @@ footer {
 .footer-legal {
     color: rgb(0, 204, 255);
     font-size: 1rem;
+}
+.email-address {
+    color: rgb(0, 204, 255);
+    font-size: 1.2rem;
+}
+.email-address:hover {
+    color: #ffffec;
 }
 footer span {
     font-size: 1.5rem;

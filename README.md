@@ -135,48 +135,158 @@ In the future I would like to build on to this site by adding:
 * Google Fonts
 * Microsoft Word (Templates) for my menus.
 
-## Testing
-* W3Schools HTML/CSS validator. Picked up a few small errors eg: extra > and unclosed CSS tags in two areas.
+### Testing
+
+* W3Schools HTML/CSS validator. 
+  - Picked up a few small errors eg: extra > and unclosed CSS tags in two areas.
+    Fixed these issues and ran again. This returned a "Congratulations, no error found" message.
+    ![w3schools-css-validator]("assets/images/screenshotw3s.png").
+
 * Tested across multiple device sizes.
-  Found on smaller screen sizes (e.g: Galaxy Fold, iPhone 5,SE) the hero image and hero text were too large, 
-  off center or at times took over the screen view. Also the reviewer images were distorted when skrunk down.
-  After speaking with my mentor Brian Macharia, he suggested that maybe my image size was unsuitable for what 
-  I was trying to do and how if I changed the size of my downloaded image it might suit better.
+  - Found on smaller screen sizes (e.g: Galaxy Fold, iPhone 5,SE) the hero image and hero text were too large, 
+    off center or at times took over the screen view. Also the reviewer images were distorted when skrunk down.
+    After speaking with my mentor Brian Macharia, he suggested that maybe my image size was unsuitable for what 
+    I was trying to do and how if I changed the size of my downloaded image it might suit better.
+    I also added media queries at (max-300) and (max-400) to control the size of the text as the screen shrinks.
+
+    - @media screen and (max-width: 400px) {       |       @media screen and (max-width: 300px) {
+      .hero-text-h1 {                              |         .hero-text-h1{
+          font-size: 3.4rem;                       |             font-size: 3rem;
+          margin: 0;                               |              margin: 0;
+        }                                          |           }
+      }                                            |          }
+
+
+  - Changing the image size also helped with the performance section in DevTool Lighthouse. My performance was 58 becasue my images 
+    were too large. This is now 78 for the home page. 
+    
 * Also during testing I discovered that I needed to insert @media queries for my form and menu pages as they were not 
-  responding correctly on small devices.
+   responding correctly on small devices.
+  - Form: 
+     @media screen and (max-width: 800px) {
+        input[type=text], input[type=email], select, textarea {
+            width: 100%;
+            margin-top: 0;
+        }
+        legend {
+            font-size: 1.5rem;
+        }
+   }
+  - Menu:
+    @media screen and (max-width: 1200px) {
+        .column {
+            width: 100%;
+        }
+    }
+    
+* While doing a last test I noticed that my images on the small screen were too large to fit and so were sending my
+   nav bar toggler icon to the left. About multiple attemps to resize the pics, which didnt work, I searched online and found an article 
+   which suggested using flexbox to create a responsive gallery. This required rewriting the gallery code and adding media queries
+   at two different screen sizes, (min-600px) and (min-1000px).
+    
+  -     @media screen and (min-width: 600px) {     |       @media screen and (min-width: 1000px) {
+      .grid {                                      |         .cell {
+          display: flex;                           |                width: 33%;
+          flex-wrap: wrap;                         |                background-color: black;
+          flex-direction: row;                     |                }
+      }                                            |              }
+      .cell {                                      |
+          width: 50%;                              |
+          background-color: black;                 |
+            }                                      |
+      }                                            |
+   
+   This causes the gallery to appear stacked in one single row on a phone screen,
+   stacked in two rows on a tablet screen and as a grid of three rows on a desktop screen. 
+   This also helped with the performance section of  DevTool Lighthouse which was at 68 but is now at 76.
+
 * I also recieved feed-back about the font selection from friends who felt the font I had originally selected
-  did not suit the site.
-# User stories
+   did not suit the site, so I changed it to "Courgette", cursive, "Roboto Slan", serif.
+
+* While using DevTools Lighthouse it suggested I put description tags in the mate section. Also included are tag
+  words which help with searches and accessibility.
+
+### User stories
+
 * Customer Goals
  - Clear purpose.
  - Trustworthy.
- - Provides clear information for booking and contacting.
- - Clear information about address, email, phone number.
- - Clear opening hours details.
- - Clear reviews.
- - Clear social media links.
- - Clear menus and a download version of each menu.
+ - Provides clear information for booking and contacting via the contact page and function page.
+ - Clear information about address, email, phone number in the footer section..
+ - Clear opening hours details on the footer section..
+ - Clear reviews located on the home page.
+ - Clear social media links in the footer area..
+ - Clear menus and a download version of each menu opening onto a new tab so user can still see original page.
  - Clear menu pricing.
- - Clear about function details and capacity.
+ - Clear about function details and capacity, descrided in the function page.
 * Business Goals 
- - Builds brand awareness.
- - Promote social media presence.
+ - Builds brand awareness by highlighting what the company does.
+ - Promotes social media presence with social links which, if a real company, would link to the relevant social media pages.
  - Showcases menus and function room.
  - Clear business details.
 * Repeat Customer Goals
- - Can easily book and contact.
+ - Can easily book and contact, via contact form.
  - Can leave online review/follow on social media.
- - Can view or download menus.
+ - Option to view or download menus for ease of access.
+
+ After viewing the site with each of these goals in mind, I feel happy that the goals have been fulfilled and that users,
+ both new and repeat will be able to use this site effectively.
+ I also feel from a business point of view that the website effectively promotes and presents "The Attic" to the public,
+ helping to create a positive awareness of "The Attic" brand.
+
+ ### Manual Testing Links
  
+ - I manually tested each link in the nav bar to make sure that they all individually worked and took me where I expected to go.
+ - I also manually checked the links to the social media pages to make sure that they also took me to the intended social media pages.
+ - I manually checked that both of my menus opened up onto seperate pages when the "Download PDF" links are clicked.
+ - I also checked that my form cannot be sent without a name, email address or text provided in the text area.
+ - In the footer area I have an email link. When tested I found it wasnt working as I had only written it in.
+   I corrected this by making it in to a link and when tested again found it to work. **As this is not a real email address, 
+   I have set it to go to the contact page**.
+ - I also found when hovered over the link was hard to see as the text was too dark so I changed it to match the light cream background seen  
+   throughout the site.
+## Tested on
+- Windows 10
+- Microsoft Edge
+- Apple Macbook Project
+- Samsung Galaxy Tab A 8.0
+- Various devices screens available on DevTools
 
+### Deployment 
 
-## Deployment 
+## Deploy from GitHub
+ - Sign into GitHub and access your repositories.
+ - Select desired repository.
+ - Once clicked on, this bring you to a code and deploy page which contains details of your READme.md, a description of the 
+   repository details and other info.
+ - Located near the top, under the repository name is a tool bar. At the end of this bar is a settings selector.
+ - Click on settings and scrool down to GitHub Pages. Here you will click on the dropdown menu under source. (Currently showing "None"),
+   click on this and select "Master", click save. Page will automatically refresh. Once refreshed, scroll down to find the link to your 
+   website high-lighted in green.
+ - Click on this or copy and paste into browser to access your site.
+
+ ## Run project locally
+ - If you have a GitHub account you will need to log in. If not you will need to sign up at https://www.GitHub.com/ to access this file.
+ - To run project, go to the repository for that project and click on it.
+ - Click the Green button to start the repositroy. This should only be clicked once as each time it is clicked it opens a new 
+   copy of the GitHub workspace.
+ - The workspace is now open to be viewed and edited locally.
+ - 
+
+## To clone repository so it can be used in different editors effectively
+ - To clone select desired repository.
+ - Once clicked on, this bring you to a code and deploy page which contains details of your READme.md, a description of the 
+   repository details and other info.
+ - Located beside the green gitpod button is a button with "Code" written on it. Here you will find a drop-down menu,
+   that when selected gives you the option to clone or download the repository file.
+
 
 ### Credits
 
 ## Code used
 * For my navbar I used code from W3Schools/bootstrap with jquery and pooper.js.
 * To style my navbar, I used code from geeksforgeeks.org and medium.com (Article written by Carol Skelley).
+* For my responsive gallery, I used code from taniarascia.com.
 * CSS for the row and column class for the menu page was taken from W3Schools.
 * The CSS for my hero-text was taken from W3Schools and amended to suit.
 * Part of my hero-image CSS was given to me by my mentor, Brian Macharia.

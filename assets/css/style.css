@@ -1,19 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto+Slab:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
 
-body{
+ body{
     font-family: "Roboto Slab", serif;
-    color: #36454f;
+    color: #0f5e92;
+    background-color: #ffffec;
     height: 100%;
+    width: 100%;
+    text-align: center;
 }
-/*-------------------------------------------------Nav-Bar---------------------------------------------------*/
+
+/*---Nav-Bar----*/
 .navbar-custom {
-    background-color: rgb(193, 238, 253);
-    font-size: 1.7rem;
+    background-color: rgb(13, 33, 71);
+    font-size: 1rem;
 }
 .navbar-custom .navbar-brand {
-    color: #36454f;
+    color: #e7d7bffd;
     padding: 4px 7px;
-    font-family: "Courgette", cursive;
+    font-family: 'Gemunu Libre', sans-serif;
     font-size: 2.2rem;
     letter-spacing: .1rem;
     display: block;
@@ -21,17 +26,24 @@ body{
     list-style: none;
     margin: 0;
 }
-.navbar-custom a:hover {
-    background-color: #ffffec;
-    border-radius: 1.5rem;
+
+.nav-link {
+    color: #e7d7bffd !important;
 }
-/*----------------------------------------------------End-Nav-Bar------------------------------------------------*/
-/*----------------------------------------------------Hero-Image-------------------------------------------------*/
+
+.navbar-custom a:hover {
+    color: rgb(228, 206, 82) !important;
+    background-color: rgb(13, 33, 71);
+    border-radius: 1rem;
+}
 .home {
+    background: url('../images/cocktail-bar.jpg');
+}
+.home1{
     background: url('../images/daytime-bar-shot.png');
 }
 .menu {
-    background: url('../images/food-hero-image-640.png');
+    background: url('../images/restaurant-food.jpg');
 }
 .contact {
     background: url('../images/bar-at-night-640.png');
@@ -39,7 +51,7 @@ body{
 .functions {
     background: url('../images/glasses.png');
 }
-                /*------"Display-flex-to-align-items:center"-given-by-my-mentor------*/
+/*------"Display-flex-to-align-items:center"-given-by-my-mentor------*/
 #hero-image {
     display: flex;
     justify-content: center;
@@ -48,136 +60,88 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 60vh;
+    height: 70vh;
     position: relative;
     margin: 0;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
+    padding: 0;
 }
-                /*----.hero-text{}-Taken-from-w3schools-and-amended-------*/
-.hero-text-h1 {
-    text-align: center;
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    background-color: rgb(193, 238, 253);
-    border-radius: 1.5rem;
-    font-size: 4.5rem;
-    padding: 15px 4px;
-    font-family: "Courgette", cursive;
-    color: #ffffec;
-    text-shadow: 3px 3px 5px #36454f;
-  }
-  @media screen and (max-width: 400px) {
-      .hero-text-h1 {
-          font-size: 3.4rem;
-          margin: 0;
-      }
-  }
-  @media screen and (max-width: 300px) {
-    .hero-text-h1{
-          font-size: 3rem;
-          margin: 0;
-      }
-  }
-/*---------------------------------------------------------End-Hero-Image------------------------------------------*/
-/*------------------------------------------------------------About-Us---------------------------------------------*/
-.about {
-    color: #36454f;
-    font-size: 1.5rem;
-    letter-spacing: .1rem;
-    background-color: #ffffec;
-    text-align: center;
-    padding: 25px;
-}
-.about-heading {
-    color: #36454f;
-    font-family: "Courgette", cursive;
-    padding-bottom: 8px;
-    font-size: 3rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 2px rgb(193, 238, 253);
-}
-.review-heading {
-    color: #36454f;
-    font-family: "Courgette", cursive;
-    padding-bottom: 8px;
-    font-size: 3rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 2px #ffffec;
-}
-.jumbotron {
-    margin: 0; 
-}
-/*----------------------------------------------End-of-About-Us-Section--------------------------------------------*/
-/*---------------------------------------------------Review-Section------------------------------------------------*/
+/*------------Review-Section--------------*/
 .reviewer-details {
-    font-family: "Courgette", cursive;
+    font-family: 'Gemunu Libre', sans-serif;
 }
 .reviews {
+    width: 100vw;
+    padding: 20px;
+    margin: 0;
     color: #36454f;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-family: 'Gemunu Libre', sans-serif;
     background-color:rgb(193, 238, 253);
+}
+.review-title {
+    background-color: rgb(193, 238, 253) !important;
 }
 .reviewer-image {
     height: 100px;
     width: 100px;
     object-fit: cover;
 }
-/*---------------------------------------------------End-Review-Section--------------------------------------------*/
-/*--------------------------------------------------------Footer---------------------------------------------------*/
+/*---------------Footer----*/
 footer {
     margin: 0;
-    background-color: #36454f;
+    background-color:rgb(13, 33, 71);
     color: #ffffec;
     padding: 30px 10px;
 }
 .footer-heading {
     color: rgb(193, 238, 253);
-    font-family: "Courgette", cursive;
-    font-size: 2.2rem;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 1.4rem;
     font-weight: bold;
     padding: 6px;
 }
 .footer-text {
-    font-size: 1.2rem;
+    font-size: .8rem;
     margin: 2px;
     padding: 2px;
 }
 .social-links {
-    font-size: 3rem;
+    font-size: 1rem;
     margin: 2px;
     padding: 2px 1px;
 }
 .footer-legal {
     color: rgb(0, 204, 255);
-    font-size: 1rem;
+    font-size: .8rem;
 }
 .email-address {
     color: rgb(0, 204, 255);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .email-address:hover {
     color: #ffffec;
 }
 footer span {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     text-transform: capitalize; 
 }
-/*-------------------------------------------------------End-Footer----------------------------------------------*/
-/*-------------------------------------------------------Gallery-------------------------------------------------*/
-        /*-----Responsive-gallery-taken-from-taniarascia.com--*/
+/*----Gallery----*/
+/*-----Responsive-gallery-taken-from-taniarascia.com--*/
 .gallery {
     background-color: #ffffec;
-}.container {
+    padding-top: 1rem;
+}
+.gallery-text {
+    padding-top: 120px;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.container {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 0 1rem;
+    /*padding: 0 1rem;*/
 }
 .responsive-image {
     max-width: 100%;
@@ -196,32 +160,116 @@ footer span {
         background-color: black;
     }
 }
+@media screen and (max-width: 767px) {
+    .gallery-text { 
+        font-size: 1rem;
+    }
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .cell {
+        width: 50%;
+        background-color: #000;
+    }
+    .function-header-details, .customer-details, .help-details {
+        text-align: center !important;
+        font-size: 1.3rem !important;
+        font-family: 'Gemunu Libre', sans-serif;
+    }
+    .navbar-brand {
+        font-size: 1.2rem !important;
+    }
+    .navbar-toggler {
+        background-color: #ffffec !important;
+        font-size: .8rem;
+    }
+}
+
 @media screen and (min-width: 1000px) {
     .cell {
-        width: 33%;
+        width: 25%;
         background-color: black;
     }
 }
-/*------------------------------------------------------End-Gallery------------------------------------------------*/
-/*--------------------------------------------------------Functions------------------------------------------------*/
+@media screen and (max-width: 400px) {
+    /*.homepage-img {
+        width: 340px;
+        height: 250px;
+    }*/
+    #home-image {
+        background: 400px;
+      }
+    p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        padding: 2px;
+    }
+}
+/*---Functions---*/
 .function-header-details {
     color: #36454f;
-    font-family: "Courgette", cursive;
-    padding-bottom: 8px;
-    font-size: 3rem;
+    font-family: 'Gemunu Libre', sans-serif;
+    padding-bottom: 2px;
+    font-size: 1.8rem;
     font-weight: bold;
     background-color: #ffffec;
     text-shadow: 2px 2px 2px rgb(193, 238, 253);
 }
+.function-h3 {
+    font-size: .8rem;
+    font-weight: bold;
+}
+.function-h4 {
+    font-size: .6rem;
+    font-weight: bold;
+}
 .function-details {
     color: #36454f;
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: .1rem;
     background-color: #ffffec;
 }
-/*------------------------------------------------------End-Functions----------------------------------------------*/
-/*-------------------------------------------------------Contact-page----------------------------------------------*/
-             /*---------------------------------------------Form------------------------------------------*/
+/*--Menu--*/
+/*---Taken-from-w3schools-and-Amended---*/
+    .column {
+            float: left;
+            width: 50%;
+            padding: 5px;
+        }
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .download {
+            background-color: #ffffec;
+            font-family: 'Gemunu Libre', sans-serif;
+            font-size: 1rem;
+        }
+        .menu-heading {
+            color: #36454f;
+            font-family: 'Gemunu Libre', sans-serif;
+            padding-bottom: 10px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .pdf-text {
+            color: #36454f;
+            font-size: 1rem;
+            letter-spacing: .1rem;
+        }
+        
+        @media screen and (max-width: 1200px) {
+          .column {
+            width: 100%;
+          }
+        }
+.menu-text {
+    padding-top: 20px;
+}
+/*--Form--*/
 .container-one{
     background-color: #ffffec;
     padding: 30px;
@@ -235,7 +283,7 @@ input[type=text], input[type="email"], select, textarea{
    resize: vertical;
 }
 legend {
-    font-family: "Courgette", cursive;
+    font-family: 'Gemunu Libre', sans-serif;
     color:#36454f;
     text-shadow: 2px 2px 4px rgb(193, 238, 253);
     font-weight: bold;
@@ -244,12 +292,12 @@ legend {
     font-size: 3.5rem;
 }
 .help-details {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     padding: 10px;
-}
+}       
 label {
     margin-top: 20px;
-    font-family: "Courgette", cursive;
+    font-family: 'Gemunu Libre', sans-serif;
     font-size: 1.5rem;
     color: #36454f;
     padding: 2px 1px 0px 0px;
@@ -257,7 +305,9 @@ label {
 }
 .btn {
     background-color: red;
+    font-size: small;
     color: white;
+    padding: 5px;
     text-transform: uppercase;
     height: 36px;
     width: 90px;
@@ -274,39 +324,3 @@ label {
     font-size: 1.5rem;
   }
 }
-/*-------------------------------------------------------End-Form--------------------------------------------------*/
-/*-------------------------------------------------------Menu-Page-------------------------------------------------*/
-        /*-----------------------------------Taken-from-w3schools-and-Amended-----------------------------*/
-.column {
-    float: left;
-    width: 50%;
-    padding: 5px;
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-.download {
-    background-color: #ffffec;
-}
-.menu-heading {
-    color: #36454f;
-    font-family: "Courgette", cursive;
-    padding-bottom: 10px;
-    font-size: 3rem;
-    font-weight: bold;
-}
-.pdf-text {
-    color: #36454f;
-    font-size: 1.5rem;
-    letter-spacing: .1rem;
-}
-
-@media screen and (max-width: 1200px) {
-  .column {
-    width: 100%;
-  }
-}
-
-/*-----------------------------------------------------End-Menu-Page------------------------------------------------*/

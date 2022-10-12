@@ -19,7 +19,7 @@
     color: #e7d7bffd;
     padding: 4px 7px;
     font-family: 'Gemunu Libre', sans-serif;
-    font-size: 2.2rem;
+    font-size: 2rem;
     letter-spacing: .1rem;
     display: block;
     border-radius: 1.5rem;
@@ -40,7 +40,7 @@
     background: url('../images/cocktail-bar.jpg');
 }
 .home1{
-    background: url('../images/daytime-bar-shot.png');
+    background: url('../images/cocktail-bar-new.jpg');
 }
 .menu {
     background: url('../images/restaurant-food.jpg');
@@ -65,9 +65,17 @@
     margin: 0;
     padding: 0;
 }
+.intro-h1 {
+    font-size: 3rem;
+    padding-top: 15px;
+    text-shadow: 2px 2px 2px rgb(193, 238, 253);
+}
+
 /*------------Review-Section--------------*/
 .reviewer-details {
     font-family: 'Gemunu Libre', sans-serif;
+    color: #000;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.822);
 }
 .reviews {
     width: 100vw;
@@ -106,7 +114,7 @@ footer {
     padding: 2px;
 }
 .social-links {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 2px;
     padding: 2px 1px;
 }
@@ -179,11 +187,17 @@ footer span {
         font-family: 'Gemunu Libre', sans-serif;
     }
     .navbar-brand {
-        font-size: 1.2rem !important;
+        font-size: 1.4rem !important;
     }
     .navbar-toggler {
         background-color: #ffffec !important;
         font-size: .8rem;
+    }
+    .intro-h1 {
+        font-size: 2rem;
+    }
+    .intro-h2 {
+        font-size: 1rem;
     }
 }
 
@@ -194,10 +208,6 @@ footer span {
     }
 }
 @media screen and (max-width: 400px) {
-    /*.homepage-img {
-        width: 340px;
-        height: 250px;
-    }*/
     #home-image {
         background: 400px;
       }
@@ -213,7 +223,7 @@ footer span {
     font-family: 'Gemunu Libre', sans-serif;
     padding-bottom: 2px;
     font-size: 1.8rem;
-    font-weight: bold;
+    font-weight: bold !important;
     background-color: #ffffec;
     text-shadow: 2px 2px 2px rgb(193, 238, 253);
 }

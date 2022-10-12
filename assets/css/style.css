@@ -139,6 +139,7 @@ footer span {
 .gallery {
     background-color: #ffffec;
     padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .gallery-text {
     padding-top: 120px;
@@ -334,3 +335,56 @@ label {
     font-size: 1.5rem;
   }
 }
+/*---Dark Mode---*/
+@media (prefers-color-scheme: dark) {
+    body, .container-one, .gallery, .download, .functions-bg {
+      color: #eee;
+      background-color: #C996CC!important;
+    }
+    .intro {
+        background-color: #121212;
+        padding-bottom: 5px;
+    }
+    .dark-mode {
+        background-color: #eee !important;
+    }
+    .navbar-custom {
+      background-color: #121212 !important;
+    }
+    .navbar-custom a:hover, .btn {
+        color: #dcb2df !important;
+        background-color: rgb(13, 33, 71);
+    }
+    .help-details, label {
+        color: #150050;
+        text-shadow: none;
+    }
+    .navbar-brand, .nav-link, .intro-h1 {
+        color: #FB2576 !important;
+        text-shadow: none;
+      }
+    .intro-h2 {
+        color: #C996CC;
+    }
+    .reviews, .function-header-details {
+        background-color: #C996CC !important;
+        text-shadow: none;
+        color: #150050;
+    }
+
+    .reviewer-details {
+        text-shadow: none;
+    }
+    footer {
+        background-color: #150050
+    }
+    a, .menu-dark, hr {
+        color: #150050;
+    }
+    i, footer {
+        color: #C996CC;
+    }
+    .footer-heading, .footer-legal, .email-address, .fa-download {
+        color: #FB2576;
+    }
+  }
